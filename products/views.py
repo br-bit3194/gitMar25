@@ -35,3 +35,15 @@ def get_product(request, id):
         return Response(serializedProductes, status=200)
     except Products.DoesNotExist:
         return Response({"message": "Product not found"}, status=404)
+
+@api_view(["POST"])
+def create_product(request):
+    try:
+        data = request.data
+        product = ProductSerializer(data=data)
+        if product.is_valid():
+            product.save()
+            return Response(product.data, status=201)
+        return Response(product.errors, status=400)
+    except Exception as e:
+        return Response({"message": "Something went wrong"}, status=500)
