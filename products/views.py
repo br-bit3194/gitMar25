@@ -1,7 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from products.models import Products
+from products.serializers import ProductSerializer
 
 
 # Create your views here.
@@ -18,3 +20,9 @@ def hello(request):
     # data = data.objects.all()
     print(data[0])
     return HttpResponse("Hello, World!")
+
+@api_view(["GET"])
+def get_products(request):
+    data = Products.objects.all()
+    serializedProductes = ProductSerializer(data, many=True).data
+    return Response(serializedProductes, status=200)
