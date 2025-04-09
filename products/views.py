@@ -4,6 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from products.models import Products
 from products.serializers import ProductSerializer
+from django.db.models import Q
 
 
 # Create your views here.
@@ -45,5 +46,30 @@ def create_product(request):
             product.save()
             return Response(product.data, status=201)
         return Response(product.errors, status=400)
+    except Exception as e:
+        return Response({"message": "Something went wrong"}, status=500)
+
+@api_view(["GET"])
+def filter_products(request):
+    try:
+        name = request.GET.get("name", None)
+        description = request.GET.get('description', None)
+        price = request.GET.get('price', None)
+
+        # Build the filter query using Q objects
+        filters = Q()
+
+        if name:
+            filters &= Q(name__icontains=name)
+        if description:
+            filters &= Q(description__icontains=description)
+        if price:
+            filters &= Q(price=price)
+
+        data = Products.objects.filter(filters)
+        serializer = ProductSerializer(data, many=True)
+
+        return Response(serializer.data, status=200)
+
     except Exception as e:
         return Response({"message": "Something went wrong"}, status=500)
