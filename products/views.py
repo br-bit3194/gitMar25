@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from products.models import Products
-from products.serializers import ProductSerializer
+from products.serializers import ProductSerializer, CategorySerializer
 from django.db.models import Q
 
 
@@ -46,6 +46,18 @@ def create_product(request):
             product.save()
             return Response(product.data, status=201)
         return Response(product.errors, status=400)
+    except Exception as e:
+        return Response({"message": "Something went wrong"}, status=500)
+
+@api_view(["POST"])
+def create_category(request):
+    try:
+        data = request.data
+        category = CategorySerializer(data=data)
+        if category.is_valid():
+            category.save()
+            return Response(category.data, status=201)
+        return Response(category.errors, status=400)
     except Exception as e:
         return Response({"message": "Something went wrong"}, status=500)
 
