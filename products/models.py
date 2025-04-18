@@ -25,3 +25,10 @@ class Category(AuditModel):
 
     def __str__(self):
         return self.name
+
+class Orders(AuditModel):
+    product = models.ManyToManyField(Products, on_delete=models.SET_NULL, related_name='orders')
+    quantity = models.IntegerField()
+
+    def __str__(self):
+        return f"Order for {self.product.name}"

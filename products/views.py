@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from products.models import Products
-from products.serializers import ProductSerializer, CategorySerializer
+from products.serializers import ProductSerializer, CategorySerializer, OrderSerializer
 from django.db.models import Q
 
 
@@ -58,6 +58,18 @@ def create_category(request):
             category.save()
             return Response(category.data, status=201)
         return Response(category.errors, status=400)
+    except Exception as e:
+        return Response({"message": "Something went wrong"}, status=500)
+
+@api_view(["POST"])
+def create_order(request):
+    try:
+        data = request.data
+        order = OrderSerializer(data=data)
+        if order.is_valid():
+            order.save()
+            return Response(order.data, status=201)
+        return Response(order.errors, status=400)
     except Exception as e:
         return Response({"message": "Something went wrong"}, status=500)
 
