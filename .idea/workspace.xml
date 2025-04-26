@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed20a44c-842a-42e9-ad1b-416f4137805f" name="Changes" comment="aws beanstalk deploy settings config">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gitMarch25.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;br-bit3194&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/br-bit3194/gitMar25.git&quot;,
+    &quot;accountId&quot;: &quot;839fe89d-2ee8-4e2c-a420-20380d250e5f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2vH4byo7ANVstAO31WEdG4SnIP3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.gitMar25.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;,
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="gitMar25" type="Python.DjangoServer" factoryName="Django server">
+      <module name="gitMar25" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="ecommerce.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
+        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed20a44c-842a-42e9-ad1b-416f4137805f" name="Changes" comment="" />
+      <created>1743788741088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743788741088</updated>
+      <workItem from="1743788742122" duration="585000" />
+      <workItem from="1744045590406" duration="563000" />
+      <workItem from="1744207101332" duration="956000" />
+      <workItem from="1744209413493" duration="117000" />
+      <workItem from="1744217859437" duration="684000" />
+      <workItem from="1744363955454" duration="4081000" />
+      <workItem from="1744986691943" duration="1196000" />
+      <workItem from="1745166527570" duration="1437000" />
+      <workItem from="1745244031532" duration="2418000" />
+      <workItem from="1745638484405" duration="1728000" />
+      <workItem from="1745640803528" duration="18420000" />
+      <workItem from="1745691455071" duration="942000" />
+      <workItem from="1745692432241" duration="3441000" />
+      <workItem from="1745696419816" duration="988000" />
+    </task>
+    <task id="LOCAL-00001" summary="create product logic implemented">
+      <option name="closed" value="true" />
+      <created>1743789318545</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743789318545</updated>
+    </task>
+    <task id="LOCAL-00002" summary="filterproducts api added filter by name, price &amp; description">
+      <option name="closed" value="true" />
+      <created>1744208040259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744208040259</updated>
+    </task>
+    <task id="LOCAL-00003" summary="createcategory &amp; products-category m to 1 relation implemented">
+      <option name="closed" value="true" />
+      <created>1744365417566</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744365417566</updated>
+    </task>
+    <task id="LOCAL-00004" summary="createcategory url defined">
+      <option name="closed" value="true" />
+      <created>1744365455923</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744365455923</updated>
+    </task>
+    <task id="LOCAL-00005" summary="createorder api defined">
+      <option name="closed" value="true" />
+      <created>1744986786830</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744986786830</updated>
+    </task>
+    <task id="LOCAL-00006" summary="custome two middlewares added">
+      <option name="closed" value="true" />
+      <created>1744990624491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744990624491</updated>
+    </task>
+    <task id="LOCAL-00007" summary="aws beanstalk deploy settings config">
+      <option name="closed" value="true" />
+      <created>1745696919874</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745696919874</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create product logic implemented" />
+    <MESSAGE value="filterproducts api added filter by name, price &amp; description" />
+    <MESSAGE value="createcategory &amp; products-category m to 1 relation implemented" />
+    <MESSAGE value="createcategory url defined" />
+    <MESSAGE value="createorder api defined" />
+    <MESSAGE value="custome two middlewares added" />
+    <MESSAGE value="aws beanstalk deploy settings config" />
+    <option name="LAST_COMMIT_MESSAGE" value="aws beanstalk deploy settings config" />
+  </component>
+</project>
